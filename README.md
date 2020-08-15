@@ -1,7 +1,7 @@
 # garudahacks
 Course Review Web App
 
-# Usage:
+### Usage:
 1. run on terminal:
   <pre><code>export FLASK_APP=app.py</code></pre>
 2. run on terminal:
