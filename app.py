@@ -47,7 +47,7 @@ def login():
 
         if len(rows) != 1:
             return "ERROR" # Error page
-        elif not check_password_hash(request.form.get('password'), rows[0]['password']):
+        elif not check_password_hash(rows[0]['password'], request.form.get('password')):
             return "ERROR" # Error page
         
         session['user_id'] = rows[0]['id']
